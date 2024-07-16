@@ -28,3 +28,11 @@ class Participante:
     @status.setter
     def status(self, value):
         self._status = value
+
+    @property
+    def overdue(self):
+        return self._overdue
+
+    @overdue.setter
+    def status(self, value):
+        self._overdue = value
