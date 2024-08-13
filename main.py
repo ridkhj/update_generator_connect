@@ -39,7 +39,7 @@ def criar_pdf(nome_arquivo, participantes):
         c.drawString(x=17, y=800-alturaAtual, text=codigo +
                      "   " + nome + "   " + str(overdue), mode=2)
         c.drawString(x=17, y=780 - alturaAtual,
-                     text="peso:    altura:    escolaridade:", mode=2)
+                     text="peso:          altura:          escolaridade:          faixa etária:          verificalão de nucleo familiar:          ", mode=2)
         c.drawImage(image='assets\\images\\coisasQueGosto.png',
                     x=0, y=570-alturaAtual, width=150, height=200)
         c.drawImage(image='assets\\images\\domiciliares.png',
