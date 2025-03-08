@@ -32,10 +32,11 @@ def extrairDados(path):
         codigo = acessar(row, column).value
         nome = acessar(row, column+1).value
         status = acessar(row, column+2).value
-        overdue = acessar(row, column+3).value
-        numeroAtual = int(codigo[6:])
 
-        participanteAuxiliar = Participante(codigo, nome, status, overdue)
+        numeroAtual = int(codigo[-5:])
+        print(status)
+
+        participanteAuxiliar = Participante(codigo, nome, status)
 
         if status != "Enviado" and status != "Devolvido à Igreja Parceira":
 

@@ -1,9 +1,9 @@
 class Participante:
-    def __init__(self, code, name, status, overdue):
+    def __init__(self, code, name, status):
         self._code = code
         self._name = name
         self._status = status
-        self._overdue = overdue
+        # self._overdue = overdue
 
     @property
     def code(self):
@@ -28,11 +28,3 @@ class Participante:
     @status.setter
     def status(self, value):
         self._status = value
-
-    @property
-    def overdue(self):
-        return self._overdue
-
-    @overdue.setter
-    def status(self, value):
-        self._overdue = value
